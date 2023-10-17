@@ -1,0 +1,99 @@
+<style>
+    /* Bootstrap-extended.css */
+    @media (max-width: 1201px) {
+        .header-navbar.fixed-top {
+            left: 0;
+        }
+    
+        .horizontal-layout .header-navbar .navbar-container {
+            padding-left: 1.5rem;
+            padding-right: 1.2rem;
+        }
+    }
+    
+    /* Horizontal-menu.css */
+    @media (max-width: 1199.98px) {
+        body.horizontal-layout.horizontal-menu .horizontal-menu-wrapper .header-navbar {
+            display: none;
+        }
+    
+        body.horizontal-layout .header-navbar {
+            background: #fff;
+        }
+    
+        body.horizontal-layout .content .content-wrapper {
+            margin-top: 5rem;
+        }
+    }
+    
+    /* dark-layout.css */
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav .dropdown-submenu.show {
+        background-color: #10163a !important;
+        color: #c2c6dc;
+    }
+    
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav .dropdown-menu a:hover {
+        color: #c2c6dc !important;
+    }
+    
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav li.active i,
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav li.active span {
+        color: #fff !important;
+    }
+    
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav li.active .dropdown-menu li.active a {
+        background-color: #10163a !important;
+        color: #c2c6dc;
+    }
+    
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav li.active .dropdown-menu li:not(.active) a {
+        background-color: #262c49 !important;
+    }
+    
+    body.dark-layout.horizontal-layout .main-menu-content .navbar-nav li.active .dropdown-menu li.open.active>a {
+        color: #c2c6dc !important;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu .navigation>li ul .active {
+        box-shadow: none;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu .navigation>li ul .active .hover>a {
+        background-color: transparent;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu .nav-item.active a {
+        box-shadow: none;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu .nav-item.active ul li.active {
+        border-radius: 0;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu .nav-item.active.sidebar-group-active .open ul li.active a {
+        background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7)) !important;
+        margin-bottom: 7px;
+        box-shadow: 0px 0px 6px 1px rgba(115, 103, 240, 0.6) !important;
+        color: #fff;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu ul li {
+        background: #10163a !important;
+        background-color: #10163a !important;
+    }
+    
+    body.dark-layout.horizontal-layout.vertical-overlay-menu .main-menu ul li a {
+        color: #c2c6dc !important;
+    }
+    </style>
+    
+    <script>
+        // app-menu.js
+    if ($body.is('.horizontal-layout') && !$body.hasClass('.horizontal-menu-demo')) {
+            this.changeMenu(currentBreakpoint.name);
+    
+            $('.menu-toggle').removeClass('is-active');
+    }
+    
+    
+    </script>
